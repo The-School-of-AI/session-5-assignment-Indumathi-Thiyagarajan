@@ -2,7 +2,7 @@
 ### Description:
 Measures the average execution time of a given function over a specified number of repetitions.
 
-####Parameters:
+* Parameters:
 
 fn: Function to time.
 repetitions (optional): Number of times to execute fn.
@@ -23,7 +23,7 @@ Returns:
 List of number raised to powers from start to end.
 
 3. polygon_area
-Description:
+### Description:
 Calculates the area of a regular polygon based on its number of sides and side length.
 
 Parameters:
@@ -34,7 +34,7 @@ Returns:
 Area of the regular polygon.
 
 4. temp_converter
-Description:
+### Description:
 Converts temperature between Celsius and Fahrenheit.
 
 Parameters:
@@ -45,7 +45,7 @@ Returns:
 Converted temperature value.
 
 5. speed_converter
-Description:
+### Description:
 Converts speed from kilometers per hour (kmph) to various other units.
 
 Parameters:
