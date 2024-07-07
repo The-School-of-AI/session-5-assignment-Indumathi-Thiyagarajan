@@ -2,7 +2,6 @@
 
 import time
 
-
 def time_it(fn, *args, repetitions= 1, **kwargs):
     """This is a genralized function to call any function
     user specified number of times and return the average
