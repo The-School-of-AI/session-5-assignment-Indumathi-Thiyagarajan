@@ -83,50 +83,31 @@ def test_session5_function_name_had_cap_letter():
 ############################## Assignment Validations###########################
 
 def test_session5_time_it_print():
-    """ Test time_it with print function, repetitions=5
-        A. failures_message: time_it can't time print function
-        B. Once you write this test, it needs to print the failure_message
-        C. Delete lines A, B and C, write proper function description after writing this test successfully. 
+    """  Test time_it with the print function for 5 repetitions 
     """
-    assert session5.time_it(print,"Hi",repetitions =5)==0 , "time_it can't time print function"
-
+    assert timeit.timeit('print("test")', number=5, repetition = 5) is not None, "time_it can't time print function"
 
 def test_session5_time_it_squared_power_list():
     """Test time_it with squared_power function, repetitions=5
-        A. failures_message: time_it can't time squared_power_list function
-        B. Once you write this test, it needs to print the failure_message
-        C. Delete lines A, B and C, write proper function description after writing this test successfully. 
     """
-    assert True == False, "time_it can't time squared_power_list function"
+    assert timeit.sqaured_power_list(number=5, repetition = 5) is not None, "time_it can't time squared_power_list function"
 
 
 def test_session5_time_it_polygon_area():
     """Test time_it with polygon_area function, repetitions=10
-        A. failures_message: time_it can't time polygon_area function
-        B. Once you write this test, it needs to print the failure_message
-        C. Delete lines A, B and C, write proper function description after writing this test successfully. 
     """
-    assert True == False, "You need to write this test!"
-
+    assert timeit.polygon_area(length=4,number=5, repetition = 10) is not None, "time_it can't time squared_power_list function"
 
 def test_session5_time_it_temp_converter():
     """Test time_it with temp_converter function, repetitions=100
-        A. failures_message: time_it can't time temp_converter function
-        B. Once you write this test, it needs to print the failure_message
-        C. Delete lines A, B and C, write proper function description after writing this test successfully. 
-    """
-    assert True == False, "You need to write this test!"
 
+    """
+    assert timeit.temp_converter(temp=35, number=100, repetition = 100) is not None, "time_it can't time squared_power_list function"
 
 def test_session5_time_it_speed_converter():
     """Test time_it with speed_converter function, repetitions=200
-        A. failures_message: time_it can't time speed_converter function
-        B. Once you write this test, it needs to print the failure_message
-        C. Delete lines A, B and C, write proper function description after writing this test successfully. 
     """
-    assert True == False, "You need to write this test!"
-
-
+    assert timeit.timeit('print("test")', 3600, number=5, repetition = 200) is not None, "time_it can't time squared_power_list function"
 
 ####################### Validations for time_it#################################
 
