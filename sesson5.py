@@ -61,12 +61,15 @@ def polygon_area(length, *args, sides = 3, **kwargs):
     3 to 6 bith inclusive"""
     # Validations
     import math
-
+    
+    if not (isinstance(length, int) or isinstance(length, float)):
+        raise TypeError("required positional argument: 'LENGTH'")
+        
+    if not isinstance(sides, int):
+        raise TypeError("Integer expected for sides")
+        
     if length is None:
         raise TypeError("required positional argument: 'LENGTH'")
-    
-    if not isinstance(length,int):
-        raise TypeError("Only integer type arguments are allowed")
     
     if not length >0:
         raise TypeError("regular polygon should have length > 0")
